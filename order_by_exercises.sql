@@ -3,7 +3,7 @@ use ymir_employees;
 SELECT first_name, last_name
 FROM employees
 WHERE first_name IN ('Irena','Vidya','Maya')
-ORDER BY first_name, last_name;
+ORDER BY first_name;
 
 SELECT first_name, last_name
 FROM employees
