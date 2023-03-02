@@ -1,10 +1,10 @@
 use ymir_employees;
 
-SELECT CONCAT(first_name,' ', last_name)
+SELECT CONCAT(first_name,' ', last_name) AS full_name
 FROM employees
 WHERE last_name LIKE 'E%'
-  AND last_name LIKE '%E'
-ORDER BY emp_no;
+    AND last_name LIKE '%E'
+    ORDER BY emp_no;
 
 SELECT first_name, last_name
 FROM employees
