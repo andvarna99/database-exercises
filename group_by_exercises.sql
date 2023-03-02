@@ -21,7 +21,7 @@ WHERE last_name NOT LIKE '%qu%'
   AND last_name LIKE '%q%'
   GROUP BY last_name;
 
-SELECT COUNT(last_name) AS duplicate_count, last_name
+SELECT COUNT(last_name), last_name
 FROM employees
 WHERE last_name NOT LIKE '%qu%'
     AND last_name LIKE '%q%'
